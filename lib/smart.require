@@ -1,0 +1,11 @@
+{
+	"famous": {
+		"git": "https://github.com/Famous/famous.git"
+	},
+  "library": {
+    "git": "https://github.com/sayawan/library.git"
+  },
+	"famous-polyfills": {
+		"git": "https://github.com/Famous/polyfills.git"
+	}
+}

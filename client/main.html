@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+  <div class="row">
+    <div class="large-9 large-centered main columns">
+
+    </div>
+  </div>
+</body>
+
+<template name='blank'></template>
+
+<template name="leaderboard">
+  {{#if selected_name}}
+  <div class="details">
+    <div class="name">{{selected_name}}</div>
+    <input type="button" class="inc" value="Give 5 points" />
+  </div>
+  {{/if}}
+
+  {{#unless selected_name}}
+  <div class="none">Click a player to select</div>
+  {{/unless}}
+</template>
+
+<template name="players">
+  <h1>Players</h1>
+</template>
+
+<template name="player">
+  <div class="player {{selected}}">
+    <div style="font-size:1.5em; line-height:30px">{{name}} : {{score}}</div>
+  </div>
+</template>
+
+<template name='home'>
+  <h1>my Home</h1>
+  <p>welcome</p>
+</template>
+
+<template name="leader">
+
+</template>
+
+<template name='about'>
+    <h1>About</h1>
+
+    {{content}}
+
+    <button>Home</button>
+</template>
+
+<template name="detail">
+  <h1 style="text-align:right">details</h1>
+</template>
+
+<template name="loading">
+  <h1>loading data..</h1>
+  <p>please wait</p>
+</template>
+
+<template name="surf">
+  {{#if selected_player}}
+  <div class="details">
+    <div class="name">{{selected_player.name}} : {{selected_player.score}}</div>
+    <input type="button" class="inc" value="Give 5 points" />
+  </div>  
+  {{else}}
+  <div class="none">Click a player to select</div>
+  {{/if}}
+</template>
+
+<template name="seq">
+  <h1>Sequence</h1>
+</template>
+
+<template name="footer">
+  <div class="tabs tabs-icon-top">
+    <a class="tab-item" href="/">
+      <i class="icon ion-home"></i>
+      Home
+    </a>
+    <a class="tab-item" href="/leader">
+      <i class="icon ion-star"></i>
+      Favorites
+    </a>
+    <a class="tab-item" href="/about">
+      <i class="icon ion-gear-a"></i>
+      Settings
+    </a>
+  </div>
+</template>

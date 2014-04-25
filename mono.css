@@ -1,0 +1,17 @@
+body {
+  background: url(/random_grey_variations.png);
+}
+
+/*html*/
+.row, .main {
+  height: 100%;
+}
+
+.main {
+  background-color: yellow;
+  padding: 0px;
+}
+
+.selected {
+  background: #43b789
+}
