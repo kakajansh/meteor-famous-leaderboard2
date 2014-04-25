@@ -119,6 +119,7 @@ Template.about.rendered = function () {
 
 };
 
+
 Template.surf.selected_player = function () {
   var player = Players.findOne(Session.get("selected_player"));
   return player;

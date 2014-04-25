@@ -74,30 +74,13 @@ Meteor.startup(function (){
         this._sections[name] = new RenderNode();
       }
 
-      cont = new ContainerSurface({
+      this._sections[name] = new ContainerSurface({
         size: [undefined, undefined],
         properties: {
           overflow: 'hidden',
-          backgroundColor: 'red'
+          backgroundColor: 'white'
         }
       })
-
-      // console.log(node)
-      // console.log(cont)
-      // console.log(this._sections)
-      this._sections[name] = cont
-
-      // this._sections[name] = new RenderNode()
-
-      // tmp = new MeteorSurface({
-      //   size: [400, 400],
-      //   template: Template[name],
-      //   properties: {
-      //     backgroundColor: 'green'
-      //   }
-      // });
-
-      // this._sections[name].add(tmp)
 
       return this._sections[name]
     }
